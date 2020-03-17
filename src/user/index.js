@@ -3,7 +3,7 @@ import { Button } from "antd";
 import { get, post } from "../units/request";
 class App extends Component {
   componentDidMount() {
-    get("/api/user/list", { page: 0, pagesize: 20 }).then(res => {
+    get("https", { page: 0, pagesize: 20 }).then(res => {
       console.log(res);
     });
   }

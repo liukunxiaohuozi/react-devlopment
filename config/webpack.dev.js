@@ -88,11 +88,11 @@ module.exports = {
     contentBase:path.resolve(__dirname,'../src/assets'),
     historyApiFallback: true,
     proxy: {
-      "/api": {
-        target: "http://test.api.zycco.cn/v2",
-        changeOrigin: true,
-        pathRewrite: { "^/api": "" }
-      }
+      // "/api": {
+      //   target: "域名",
+      //   changeOrigin: true,
+      //   pathRewrite: { "^/api": "" }
+      // }
     }
   }
 };
